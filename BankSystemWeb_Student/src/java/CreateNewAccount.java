@@ -11,7 +11,7 @@ import java.text.DecimalFormat;
 
 /**
  *
- * @author vkris
+ * @author thanuj
  */
 @Named(value = "createNewAccount")
 @RequestScoped
@@ -33,14 +33,14 @@ public class CreateNewAccount {
         {
             return("Internal error,please try again later!");
         }
-        final String DB_URL = "jdbc:mysql://mis-sql.uhcl.edu/gattupalliv3940";
+        final String DB_URL = "XXXX";
         Connection conn = null;
         Statement stat = null;
         ResultSet rs = null;
         String accountID = "";
         try
         {
-            conn = DriverManager.getConnection(DB_URL,"gattupalliv3940","1552688");
+            conn = DriverManager.getConnection(DB_URL,"thanuj","thanuj");
             stat = conn.createStatement();
             rs = stat.executeQuery("select * from nextAccountNumber");
             if(rs.next())
