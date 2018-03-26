@@ -10,7 +10,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 /**
  *
- * @author Denny Desktop
+ * @author thanuj
  */
 public class DateAndTime {
    
