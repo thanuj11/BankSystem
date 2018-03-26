@@ -5,7 +5,7 @@
 
 /**
  *
- * @author Denny Desktop
+ * @author thanuj
  */
 import java.io.Serializable;
 import java.sql.*;
@@ -62,10 +62,10 @@ public class OnlineAccount {
         
         try
         {
-            final String DATABASE_URL = "jdbc:mysql://mis-sql.uhcl.edu/drlin";
+            final String DATABASE_URL = "n";
             
             //connect to the database with user name and password
-            connection = DriverManager.getConnection(DATABASE_URL, "DrLin", "UHCL2014");   
+            connection = DriverManager.getConnection(DATABASE_URL, "thanuj", "thanuj");   
             statement = connection.createStatement();
             
             resultSet = statement.executeQuery("Select * from bankAccount where ssn = '" + ssNumber + "'" );
