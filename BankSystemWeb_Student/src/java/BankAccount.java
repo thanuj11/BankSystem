@@ -5,7 +5,7 @@
 
 /**
  *
- * @author Denny Desktop
+ * @author Thanuj
  */
 import java.sql.*;
 import java.util.ArrayList;
@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
  *
- * @author LinJian
+ * @author Thanuj
  */
 public class BankAccount {
     
@@ -56,7 +56,7 @@ public class BankAccount {
             activityStatement = activityStatement + DateAndTime.DateTime() + ": Deposit " 
                     + df.format(depositAmount) + ". Balance: $" + df.format(balance) + "\n";
             
-            final String DATABASE_URL = "jdbc:mysql://mis-sql.uhcl.edu/drlin";
+            final String DATABASE_URL = "xxxx";
             
             Connection connection = null;  //a connection to the database
             Statement statement = null;    //execution of a statement
@@ -65,7 +65,7 @@ public class BankAccount {
             try 
             {
                 //connect to the database
-                connection = DriverManager.getConnection(DATABASE_URL, "DrLin", "UHCL2014");
+                connection = DriverManager.getConnection(DATABASE_URL, "thanuj", "thanuj");
                 
                 //create a statement
                 statement = connection.createStatement();
@@ -107,7 +107,7 @@ public class BankAccount {
             activityStatement = activityStatement + DateAndTime.DateTime() + ": Withdraw " 
                     + df.format(withdrawAmount) + ". Balance: $" + df.format(balance) + "\n";
             
-            final String DATABASE_URL = "jdbc:mysql://mis-sql.uhcl.edu/drlin";
+            final String DATABASE_URL = "xxxx";
             
             Connection connection = null;  //a connection to the database
             Statement statement = null;    //execution of a statement
@@ -116,7 +116,7 @@ public class BankAccount {
             try 
             {
                 //connect to the database
-                connection = DriverManager.getConnection(DATABASE_URL, "DrLin", "UHCL2014");
+                connection = DriverManager.getConnection(DATABASE_URL, "thanuj", "thanuj");
                 
                 //create a statement
                 statement = connection.createStatement();
